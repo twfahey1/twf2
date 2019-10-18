@@ -1,0 +1,13 @@
+{
+    "name": "twf2_deploy_module",
+    "type": "drupal-module",
+    "description": "Provides programmatic updates to the site.",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/twf2_deploy_module",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/twf2_deploy_module",
+        "source": "http://cgit.drupalcode.org/twf2_deploy_module",
+    },
+}

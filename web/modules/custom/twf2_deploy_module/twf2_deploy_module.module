@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains twf2_deploy_module.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function twf2_deploy_module_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the twf2_deploy_module module.
+    case 'help.page.twf2_deploy_module':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides programmatic updates to the site.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
