@@ -1,0 +1,7 @@
+name: 'TWF Migration'
+type: module
+description: 'Provides migration of data into the site.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - migrate

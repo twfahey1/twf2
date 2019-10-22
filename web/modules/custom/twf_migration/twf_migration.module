@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains twf_migration.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function twf_migration_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the twf_migration module.
+    case 'help.page.twf_migration':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides migration of data into the site.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

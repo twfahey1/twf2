@@ -36,3 +36,14 @@ if (file_exists($local_settings)) {
  * modifying settings.php.
  */
 $settings['install_profile'] = 'standard';
+$databases['default']['default'] = array (
+  'database' => 'default',
+  'username' => 'user',
+  'password' => 'user',
+  'prefix' => '',
+  'host' => 'db',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = 'T3hQMWuGXx3FP60mgjCffNEKi9hhXLToRH0XgFQ-sypAoxbLLu3zZorurX4Pj3RnbK9nWTy5gg';

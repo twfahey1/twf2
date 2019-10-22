@@ -12,39 +12,41 @@ const pathsToTest = {
 let scenariosToTest = [];
 
 for (let [key, value] of Object.entries(pathsToTest)) {
-    scenariosToTest.push({
-        label: key,
-        url: multidevURL + value,
-        referenceUrl: devURL + value,
-        hideSelectors: [],
-        removeSelectors: [],
-        selectorExpansion: true,
-        selectors: [
+    scenariosToTest.push(
+        {
+            label: key,
+            url: multidevURL + value,
+            referenceUrl: devURL + value,
+            hideSelectors: [],
+            removeSelectors: [],
+            selectorExpansion: true,
+            selectors: [
             'document',
-        ],
-        readyEvent: null,
-        delay: 1500,
-        misMatchThreshold: 0.1
-    })
+            ],
+            readyEvent: null,
+            delay: 1500,
+            misMatchThreshold: 0.1
+        }
+    )
 }
 
 module.exports = {
     id: 'test',
     viewports: [{
-            name: 'phone',
-            width: 320,
-            height: 480
-        },
+        name: 'phone',
+        width: 320,
+        height: 480
+    },
         {
             name: 'tablet',
             width: 1024,
             height: 768
-        },
+    },
         {
             "name": "desktop",
             "width": 1920,
             "height": 1080
-        }
+    }
     ],
     scenarios: scenariosToTest,
     paths: {
