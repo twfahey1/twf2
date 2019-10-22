@@ -21,6 +21,7 @@
         "drupal/core": "^8.6.15",
         "drupal/domain": "1.0-alpha16",
         "drupal/features": "3.8",
+        "drupal/redis": "1.2",
         "drupal/search_api": "1.14",
         "drupal/search_api_pantheon": "~1.0",
         "drush-ops/behat-drush-endpoint": "^9.3",
