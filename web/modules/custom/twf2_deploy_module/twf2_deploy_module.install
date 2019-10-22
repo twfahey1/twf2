@@ -11,8 +11,8 @@
 function twf2_deploy_module_update_8002() {
   $installer = \Drupal::service('module_installer');
   $installer->install([
-    'domain', 
-    'domain_access', 
+    'domain',
+    'domain_access',
     'domain_config',
     'admin_toolbar_tools',
   ]);
