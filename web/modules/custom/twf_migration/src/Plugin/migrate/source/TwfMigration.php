@@ -26,8 +26,7 @@ class TwfMigration extends SqlBase {
    * {@inheritdoc}
    */
   public function fields() {
-    $fields = [
-    ];
+    $fields = [];
     return $fields;
   }
 
