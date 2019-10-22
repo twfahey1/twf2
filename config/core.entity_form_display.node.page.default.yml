@@ -1,9 +1,11 @@
-uuid: d8d351e3-2fe5-4acc-b1a0-b476e2b2514e
+uuid: 4806215b-75f0-4984-a632-b6b62e125968
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_domain_access
+    - field.field.node.page.field_domain_all_affiliates
     - node.type.page
   module:
     - path
@@ -30,6 +32,19 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_domain_access:
+    type: options_buttons
+    weight: 40
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_domain_all_affiliates:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 41
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
