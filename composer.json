@@ -25,7 +25,7 @@
         "drupal/search_api": "1.14",
         "drupal/search_api_pantheon": "~1.0",
         "drush-ops/behat-drush-endpoint": "^9.3",
-        "drush/drush": "~8.3",
+        "drush/drush": "^9",
         "pantheon-systems/quicksilver-pushback": "^2",
         "rvtraveller/qs-composer-installer": "^1.1",
         "webflo/drupal-core-strict": "^8.6.15",
@@ -86,6 +86,11 @@
         ]
     },
     "extra": {
+        "drush": {
+            "services": {
+              "drush.services.yml": "^9"
+            }
+        },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
