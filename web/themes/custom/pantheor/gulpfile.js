@@ -92,7 +92,6 @@ function css() {
     }))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./css"))
-    .pipe(browsersync.stream());
 }
 
 // JS task
