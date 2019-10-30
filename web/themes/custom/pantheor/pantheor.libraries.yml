@@ -1,0 +1,7 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/resume.css: {}
+  js:
+    js/resume.min.js: {}

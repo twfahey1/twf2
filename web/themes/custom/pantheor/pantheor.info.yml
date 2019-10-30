@@ -1,0 +1,9 @@
+name: Pantheor
+type: theme
+description: 'A custom theme, designed for a Pantheor!'
+package: Custom
+version: VERSION
+core: 8.x
+base theme: false
+libraries:
+  - pantheor/global-styling
