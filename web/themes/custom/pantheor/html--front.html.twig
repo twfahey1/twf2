@@ -1,3 +1,11 @@
+{%
+  set body_classes = [
+    logged_in ? 'user-logged-in',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    node_type ? 'page-node-type-' ~ node_type|clean_class,
+    db_offline ? 'db-offline',
+  ]
+%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,8 +31,8 @@
 
 </head>
 
-<body id="page-top">
-
+<body id="page-top" {{ attributes.addClass(body_classes) }}>
+  {{ page_top }}
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Pantheon CSE</span>
