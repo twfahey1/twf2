@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "593597de7ef2e1019d694a27473d8dfd",
+    "content-hash": "d3ea15b3151af6fc5a11352742472f73",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2160,6 +2160,74 @@
             "time": "2018-02-09T18:02:28+00:00"
         },
         {
+            "name": "drupal/encrypt",
+            "version": "3.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/encrypt.git",
+                "reference": "8.x-3.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/encrypt-8.x-3.0-rc2.zip",
+                "reference": "8.x-3.0-rc2",
+                "shasum": "784f41ad69bdff14f180ceeec70512738402e8e8"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/key": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0-rc2",
+                    "datestamp": "1553277784",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gisle",
+                    "homepage": "https://www.drupal.org/user/409554"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "nerdstein",
+                    "homepage": "https://www.drupal.org/user/1557710"
+                },
+                {
+                    "name": "rlhawk",
+                    "homepage": "https://www.drupal.org/user/352283"
+                },
+                {
+                    "name": "theunraveler",
+                    "homepage": "https://www.drupal.org/user/71548"
+                },
+                {
+                    "name": "zzolo",
+                    "homepage": "https://www.drupal.org/user/147331"
+                }
+            ],
+            "description": "Provides an API for two-way encryption.",
+            "homepage": "https://www.drupal.org/project/encrypt",
+            "support": {
+                "source": "https://git.drupalcode.org/project/encrypt"
+            }
+        },
+        {
             "name": "drupal/features",
             "version": "3.8.0",
             "source": {
@@ -2238,6 +2306,74 @@
             "homepage": "https://www.drupal.org/project/features",
             "support": {
                 "source": "https://git.drupalcode.org/project/features"
+            }
+        },
+        {
+            "name": "drupal/key",
+            "version": "1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/key.git",
+                "reference": "8.x-1.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/key-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "908aab1e38abba391de2a9eb82bd2de9240eb0b9"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.12",
+                    "datestamp": "1573783085",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Cellar Door",
+                    "homepage": "https://www.drupal.org/user/658076"
+                },
+                {
+                    "name": "CrashTest_",
+                    "homepage": "https://www.drupal.org/user/261457"
+                },
+                {
+                    "name": "nerdstein",
+                    "homepage": "https://www.drupal.org/user/1557710"
+                },
+                {
+                    "name": "rlhawk",
+                    "homepage": "https://www.drupal.org/user/352283"
+                }
+            ],
+            "description": "Provides the ability to manage site-wide keys",
+            "homepage": "http://drupal.org/project/key",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/key",
+                "issues": "http://drupal.org/project/key"
             }
         },
         {
@@ -8539,7 +8675,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "drupal/domain": 15
+        "drupal/domain": 15,
+        "drupal/encrypt": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
