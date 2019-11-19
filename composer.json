@@ -26,6 +26,7 @@
         "drupal/redis": "1.2",
         "drupal/search_api": "1.14",
         "drupal/search_api_pantheon": "~1.0",
+        "drupal/sodium": "2.0",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
         "pantheon-systems/quicksilver-pushback": "^2",
@@ -124,7 +125,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "platform": {
-            "php": "7.0.8"
+            "php": "7.2"
         }
     }
 }
