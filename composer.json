@@ -25,6 +25,7 @@
         "drupal/core": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/domain": "1.0-alpha16",
+        "drupal/dropzonejs": "^2.0",
         "drupal/encrypt": "3.0-rc2",
         "drupal/features": "3.8",
         "drupal/pathauto": "1.6.0",
