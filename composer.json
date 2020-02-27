@@ -27,20 +27,22 @@
         "drupal/domain": "1.0-alpha16",
         "drupal/dropzonejs": "^2.0",
         "drupal/encrypt": "3.0-rc2",
+        "drupal/entity_browser": "^2.4",
         "drupal/features": "3.8",
         "drupal/pathauto": "1.6.0",
         "drupal/real_aes": "^2.2",
         "drupal/redirect": "^1.5",
         "drupal/redis": "1.2",
+        "drupal/restui": "^1.17",
         "drupal/s3fs": "3.0-alpha14",
         "drupal/s3fs_cors": "1.0-beta3",
-        "drupal/search_api": "1.14",
-        "drupal/search_api_pantheon": "~1.0",
         "drupal/sodium": "2.0",
+        "drupal/webform": "^5.8",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
         "pantheon-systems/quicksilver-pushback": "^2",
         "rvtraveller/qs-composer-installer": "^1.1",
+        "solarium/solarium": "5.0.2",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
@@ -138,6 +140,9 @@
                 ".eslintrc.json",
                 ".htaccess",
                 "web.config"
+            ],
+            "allowed-packages": [
+                "tylerfahey/docksal-pack"
             ]
         }
     },
