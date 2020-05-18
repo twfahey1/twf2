@@ -6,4 +6,4 @@ parameters:
     factory.keyvalue: {  }
     factory.keyvalue.expirable: {  }
     filter_protocols: [http, https, ftp, news, nntp, tel, telnet, mailto, irc, ssh, sftp, webcal, rtsp]
-    cors.config: { enabled: false, allowedHeaders: {  }, allowedMethods: {  }, allowedOrigins: ['*'], exposedHeaders: false, maxAge: false, supportsCredentials: false }
+    cors.config: { enabled: true, allowedHeaders: {  }, allowedMethods: {  }, allowedOrigins: ['https://dev-twf1.pantheonsite.io'], exposedHeaders: false, maxAge: false, supportsCredentials: false }

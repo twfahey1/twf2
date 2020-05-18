@@ -58,3 +58,4 @@ $settings['hash_salt'] = 'T3hQMWuGXx3FP60mgjCffNEKi9hhXLToRH0XgFQ-sypAoxbLLu3zZo
 //   // Set Redis to not get the cache_form (no performance difference).
 //   $settings['cache']['bins']['form']      = 'cache.backend.database';
 // }
+
